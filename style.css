@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f0f0f;
+  color: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a1a1a;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+h1 {
+  font-size: 22px;
+}
+
+.primary-btn {
+  background: #00bcd4;
+  border: none;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  background: #0196a7;
+}
+
+.cancel-btn {
+  background: #f44336;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cancel-btn:hover {
+  background: #d32f2f;
+}
+
+.filter-bar {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+
+select {
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 6px;
+}
+
+.todo-list {
+  margin-top: 25px;
+  background: #181818;
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 100px;
+}
+
+.todo-item {
+  background: #222;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.05);
+  transition: 0.3s;
+}
+
+.todo-item:hover {
+  transform: scale(1.01);
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.todo-buttons button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.todo-buttons button:hover {
+  background: #444;
+}
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #1e1e1e;
+  padding: 25px;
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+input,
+select {
+  background: #2a2a2a;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+}
